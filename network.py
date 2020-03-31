@@ -97,6 +97,10 @@ class NeuralNetwork():
         print(len(test_data))
         test_results = [(np.argmax(self.feedforward(x)), y)
                         for (x, y) in test_data]
+        for (x,y) in test_results:
+            print('test results')
+            print(x)
+            print(y)
         return sum(int(x == y) for (x, y) in test_results)
 
     def cost_derivative(self, output_activations, y):

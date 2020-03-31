@@ -94,6 +94,7 @@ class NeuralNetwork():
         #r = [self.feedforward(x) for (x, y) in test_data]
         #for a in r:
         #    print("{0}, {1}".format(format(a[0][0], 'f'), format(a[1][0], 'f')))
+        print(len(test_data))
         test_results = [(np.argmax(self.feedforward(x)), y)
                         for (x, y) in test_data]
         return sum(int(x == y) for (x, y) in test_results)

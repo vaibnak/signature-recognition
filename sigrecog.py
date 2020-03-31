@@ -35,7 +35,7 @@ def main():
             test_data.append((data, result))
 
     net = network.NeuralNetwork([901, 500, 500, 2])
-    net.sgd(training_data, 10, 50, 0.01, test_data)
+    net.sgd(training_data, 50, 50, 0.01, test_data)
 
 
 if __name__ == '__main__':

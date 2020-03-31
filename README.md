@@ -4,7 +4,7 @@ Verify authenticity of handwritten signatures through digital image processing a
 
 ## Usage
 - `python sigrecog.py` to run with our implementation of a backpropagation neural network.
-- `python sigrecogtf.py` to run with a tensorflow model created using logistic regression.
+- `python sigrecogtf.py` to run with a tensorflow model created using logistic
 
 ## Built with
 - OpenCV

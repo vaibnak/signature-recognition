@@ -101,9 +101,9 @@ class NeuralNetwork():
         if(epoch == 49): 
             for (x,y) in test_results:
                 if(x == y):
-                    print(cnt + "is genuine")
+                    print(str(cnt) + "is genuine")
                 else:
-                    print(cnt + "is fake")
+                    print(str(cnt) + "is fake")
                 cnt = cnt+1;
             
         return sum(int(x == y) for (x, y) in test_results)

@@ -11,6 +11,7 @@ def main():
     current_dir = os.path.dirname(__file__)
 
     author = '021'
+    # change name when running in kaggle
     training_folder = os.path.join(current_dir, 'data/training/', author)
     test_folder = os.path.join(current_dir, 'data/test/', author)
 

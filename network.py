@@ -97,11 +97,14 @@ class NeuralNetwork():
         print(len(test_data))
         test_results = [(np.argmax(self.feedforward(x)), y)
                         for (x, y) in test_data]
+        cnt = 1;
         if(epoch == 49): 
             for (x,y) in test_results:
-                print('test results')
-                print(x)
-                print(y)
+                if(x == y):
+                    print(cnt + "is genuine")
+                else:
+                    print(cnt + "is fake")
+                cnt = cnt+1;
             
         return sum(int(x == y) for (x, y) in test_results)
 
